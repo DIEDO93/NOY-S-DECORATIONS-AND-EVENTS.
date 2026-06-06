@@ -11,8 +11,13 @@
 body{
     margin:0;
     font-family:'Playfair Display', serif;
-    background:#1f4d3f;
     color:white;
+
+    /* Verde lujo refinado */
+    background:
+        radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 55%),
+        radial-gradient(circle at bottom, rgba(200,169,106,0.12), transparent 60%),
+        #1b3f34;
 }
 
 /* NAV */
@@ -20,19 +25,20 @@ nav{
     position:fixed;
     top:0;
     width:100%;
-    background:rgba(0,0,0,0.25);
     display:flex;
     justify-content:center;
-    gap:25px;
+    gap:30px;
     padding:15px;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
     z-index:1000;
-    backdrop-filter: blur(6px);
 }
 
 nav a{
     color:white;
     text-decoration:none;
     font-weight:600;
+    letter-spacing:1px;
 }
 
 /* HERO */
@@ -44,61 +50,67 @@ nav a{
     align-items:center;
     text-align:center;
     padding:20px;
-    background:
-        radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 60%),
-        radial-gradient(circle at bottom, rgba(200,169,106,0.10), transparent 60%);
 }
 
 .hero img{
-    width:320px;
-    max-width:80%;
-    margin-bottom:20px;
+    width:340px;
+    max-width:85%;
     background:white;
-    padding:12px;
-    border-radius:15px;
+    padding:14px;
+    border-radius:16px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:3rem;
+    font-size:3.2rem;
     margin:10px 0;
     letter-spacing:1px;
 }
 
-.hero p{
-    max-width:800px;
+.hero .short{
     font-size:1.2rem;
     opacity:0.95;
-    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.hero .cta{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#c8a96a;
+    color:#1b3f34;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
 }
 
 /* SECCIONES */
 section{
-    max-width:1000px;
+    max-width:1050px;
     margin:auto;
-    padding:80px 20px;
+    padding:90px 20px;
 }
 
 h2{
     font-size:2rem;
     border-left:4px solid #c8a96a;
-    padding-left:10px;
+    padding-left:12px;
+    margin-bottom:20px;
 }
 
 .card{
     background:rgba(255,255,255,0.08);
-    padding:25px;
+    padding:28px;
     border-radius:15px;
-    margin-top:20px;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
 }
 
-/* BOTÓN */
+/* CONTACTO BOTÓN */
 .btn{
     display:inline-block;
     margin-top:20px;
     padding:12px 22px;
     background:#c8a96a;
-    color:#1f4d3f;
+    color:#1b3f34;
     text-decoration:none;
     border-radius:30px;
     font-weight:bold;
@@ -107,7 +119,7 @@ h2{
 /* FOOTER */
 footer{
     text-align:center;
-    padding:30px;
+    padding:35px;
     opacity:0.8;
 }
 </style>
@@ -115,49 +127,77 @@ footer{
 
 <body>
 
+<!-- NAV -->
 <nav>
     <a href="#historia">Historia</a>
     <a href="#categorias">Categorías</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
-<!-- HERO -->
+<!-- PORTADA (LIMPIA Y VISUAL) -->
 <div class="hero">
 
     <img src="logo-noy.jpeg" alt="Logo">
 
     <h1>EVENTOS Y DECORACIONES NOY</h1>
 
-    <p>
-        Creamos experiencias inolvidables para cada celebración.<br><br>
+    <div class="short">
+        Luxury event design & decoration<br>
+        Diseño exclusivo para eventos inolvidables
+    </div>
 
-        Somos un negocio familiar de Pérez Zeledón con experiencia desde 1992,
-        especializado en la decoración de eventos exclusivos.<br><br>
-
-        We are a family business with experience since 1992,
-        specialized in creating luxury event experiences.<br><br>
-
-        Bodas • Cumpleaños • Quinceaños • Corporativos • Ocasiones especiales
-    </p>
-
-    <a class="btn" href="#historia">Conocer más</a>
+    <a class="cta" href="#historia">Descubrir más</a>
 
 </div>
 
 <!-- HISTORIA -->
 <section id="historia">
-    <h2>Historia / History</h2>
+    <h2>Historia / Our Story</h2>
 
     <div class="card">
-        Somos un negocio familiar dedicado a la decoración de eventos desde 1992,
-        creando experiencias únicas, elegantes y personalizadas para cada cliente.<br><br>
 
-        We are a family business dedicated to event decoration since 1992,
-        creating unique, elegant and personalized experiences.
+        <p>
+            Somos un negocio familiar ubicado en Pérez Zeledón, Costa Rica, con más de tres décadas de experiencia en la decoración y organización de eventos desde 1992.
+        </p>
+
+        <p>
+            We are a family-owned business based in Pérez Zeledón, Costa Rica, with over three decades of experience in event decoration and planning since 1992.
+        </p>
+
+        <br>
+
+        <p>
+            Nuestro enfoque es crear experiencias elegantes, personalizadas y memorables para cada cliente, cuidando cada detalle del evento.
+        </p>
+
+        <p>
+            Our focus is to create elegant, personalized and memorable experiences for every client, taking care of every detail of the event.
+        </p>
+
+        <br>
+
+        <p>
+            Atendemos bodas, cumpleaños, corporativos y ocasiones especiales en toda la zona sur de Costa Rica.
+        </p>
+
+        <p>
+            We serve weddings, birthdays, corporate events and special occasions throughout southern Costa Rica.
+        </p>
+
+        <br>
+
+        <p>
+            Contamos con el respaldo de empresas aliadas de confianza, ofreciendo soluciones completas con transparencia, eficiencia y respeto. Nuestros precios son competitivos y trabajamos siempre con comunicación abierta para adaptarnos a cada presupuesto posible.
+        </p>
+
+        <p>
+            We also have the support of trusted partner companies, offering complete solutions with transparency, efficiency and respect. Our prices are competitive and we always maintain open communication to adapt to each possible budget.
+        </p>
+
     </div>
 </section>
 
-<!-- CATEGORIAS -->
+<!-- CATEGORÍAS -->
 <section id="categorias">
     <h2>Categorías / Categories</h2>
 
