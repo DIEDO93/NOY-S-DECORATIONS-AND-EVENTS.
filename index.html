@@ -8,72 +8,80 @@
 <style>
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#f8f8f8;
-    color:#333;
+    font-family: Arial, sans-serif;
+    background:#3f4f3f; /* verde musgo */
+    color:white;
 }
 
+/* HEADER */
 header{
-    background:linear-gradient(135deg,#8b5cf6,#ec4899);
-    color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:70px 20px;
+}
+
+header img{
+    max-width:220px;
+    margin-bottom:20px;
+    border-radius:15px;
+    background:white;
+    padding:10px;
 }
 
 header h1{
-    font-size:3rem;
+    font-size:2.8rem;
     margin:0;
+    letter-spacing:1px;
 }
 
 header p{
     font-size:1.2rem;
     max-width:800px;
-    margin:auto;
+    margin:15px auto 0;
+    opacity:0.9;
 }
 
+/* SECCIONES */
 section{
     max-width:1100px;
     margin:auto;
-    padding:50px 20px;
+    padding:40px 20px;
 }
 
 .card{
-    background:white;
-    padding:30px;
+    background:rgba(255,255,255,0.08);
+    padding:25px;
     border-radius:15px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
-    margin-bottom:25px;
+    margin-bottom:20px;
+    backdrop-filter: blur(6px);
 }
 
 h2{
-    color:#8b5cf6;
+    color:#ffffff;
+    margin-top:0;
 }
 
 ul li{
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
+/* BOTÓN WHATSAPP */
 .whatsapp{
     display:inline-block;
     background:#25D366;
     color:white;
-    padding:15px 25px;
+    padding:14px 22px;
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
+    margin-top:10px;
 }
 
+/* FOOTER */
 footer{
-    background:#222;
-    color:white;
     text-align:center;
-    padding:25px;
-}
-
-@media(max-width:768px){
-    header h1{
-        font-size:2rem;
-    }
+    padding:20px;
+    font-size:0.9rem;
+    opacity:0.8;
 }
 </style>
 </head>
@@ -81,69 +89,65 @@ footer{
 <body>
 
 <header>
+
+    <img src="logo-noy.jpeg" alt="Logo Eventos y Decoraciones Noy">
+
     <h1>EVENTOS Y DECORACIONES NOY</h1>
+
     <p>
-        Creamos experiencias únicas para cada celebración.
-        Decoración profesional, atención personalizada y opciones
-        para todo tipo de eventos.
+        Creamos experiencias inolvidables para cada celebración.<br>
+        We create unforgettable experiences for every event.
     </p>
+
 </header>
 
 <section>
 
 <div class="card">
-    <h2>Sobre Nosotros</h2>
+    <h2>Sobre Nosotros / About Us</h2>
     <p>
-        Somos un negocio familiar con experiencia desde 1992,
-        dedicado a la decoración y organización de eventos.
-        Nuestro objetivo es convertir cada celebración en un momento
-        inolvidable, ofreciendo calidad, creatividad y excelente servicio.
+        Somos un negocio familiar con experiencia desde 1992 en decoración de eventos.<br>
+        We are a family business with experience since 1992 in event decoration.
     </p>
 </div>
 
 <div class="card">
-    <h2>Servicios</h2>
+    <h2>Servicios / Services</h2>
     <ul>
-        <li>Bodas</li>
-        <li>Quinceaños</li>
-        <li>Cumpleaños</li>
+        <li>Bodas / Weddings</li>
+        <li>Quinceaños / Quinceañeras</li>
+        <li>Cumpleaños / Birthdays</li>
         <li>Baby Showers</li>
-        <li>Graduaciones</li>
-        <li>Eventos Corporativos</li>
-        <li>Decoraciones Temáticas</li>
-        <li>Arreglos Florales</li>
-        <li>Y mucho más</li>
+        <li>Graduaciones / Graduations</li>
+        <li>Eventos Corporativos / Corporate Events</li>
+        <li>Decoración Floral / Floral Decoration</li>
     </ul>
 </div>
 
 <div class="card">
-    <h2>Cobertura</h2>
+    <h2>Cobertura / Service Area</h2>
     <p>
-        Trabajamos en Pérez Zeledón, Dominical, Uvita, Quepos
-        y otras zonas del país. Consulte sin compromiso.
+        Pérez Zeledón, Dominical, Uvita, Quepos y alrededores.<br>
+        Pérez Zeledón, Dominical, Uvita, Quepos and surrounding areas.
     </p>
 </div>
 
 <div class="card">
-    <h2>Contáctenos</h2>
+    <h2>Contacto / Contact</h2>
 
-    <p><strong>WhatsApp:</strong> 8618-5305</p>
+    <p><strong>WhatsApp:</strong> +506 8618 5305</p>
     <p><strong>Facebook:</strong> Floristería y Decoraciones Noy</p>
-    <p><strong>Instagram:</strong> Floristería Noy</p>
+    <p><strong>Instagram:</strong> floristeria_noy</p>
 
-    <br>
-
-    <a class="whatsapp"
-       href="https://wa.me/50686185305"
-       target="_blank">
-       Solicitar Cotización
+    <a class="whatsapp" href="https://wa.me/50686185305" target="_blank">
+        Enviar Mensaje / Send Message
     </a>
 </div>
 
 </section>
 
 <footer>
-    © 2026 Eventos y Decoraciones Noy - Todos los derechos reservados.
+    © 2026 Eventos y Decoraciones Noy
 </footer>
 
 </body>
