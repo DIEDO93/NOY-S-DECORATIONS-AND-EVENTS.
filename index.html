@@ -12,12 +12,23 @@ body{
     margin:0;
     font-family:'Playfair Display', serif;
     color:white;
+    background:#1b3f34;
+    scroll-behavior:smooth;
+}
 
-    /* Verde lujo refinado */
+/* FONDO PREMIUM (lujo pastel + dorado + profundidad) */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
     background:
-        radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 55%),
-        radial-gradient(circle at bottom, rgba(200,169,106,0.12), transparent 60%),
-        #1b3f34;
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(200,169,106,0.12), transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.05), transparent 50%);
+    z-index:-1;
 }
 
 /* NAV */
@@ -38,12 +49,11 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:600;
-    letter-spacing:1px;
 }
 
-/* HERO */
+/* HERO FULL SCREEN */
 .hero{
-    min-height:100vh;
+    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -57,8 +67,9 @@ nav a{
     max-width:85%;
     background:white;
     padding:14px;
-    border-radius:16px;
+    border-radius:18px;
     margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
 .hero h1{
@@ -67,14 +78,16 @@ nav a{
     letter-spacing:1px;
 }
 
-.hero .short{
+.hero p{
+    max-width:800px;
     font-size:1.2rem;
     opacity:0.95;
-    margin-bottom:20px;
+    line-height:1.6;
 }
 
-.hero .cta{
-    margin-top:20px;
+/* BOTÓN */
+.btn{
+    margin-top:25px;
     padding:12px 25px;
     background:#c8a96a;
     color:#1b3f34;
@@ -104,18 +117,6 @@ h2{
     backdrop-filter: blur(8px);
 }
 
-/* CONTACTO BOTÓN */
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 22px;
-    background:#c8a96a;
-    color:#1b3f34;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-}
-
 /* FOOTER */
 footer{
     text-align:center;
@@ -134,19 +135,19 @@ footer{
     <a href="#contacto">Contacto</a>
 </nav>
 
-<!-- PORTADA (LIMPIA Y VISUAL) -->
+<!-- HERO (SOLO LO QUE PEDISTE) -->
 <div class="hero">
 
     <img src="logo-noy.jpeg" alt="Logo">
 
     <h1>EVENTOS Y DECORACIONES NOY</h1>
 
-    <div class="short">
-        Luxury event design & decoration<br>
-        Diseño exclusivo para eventos inolvidables
-    </div>
+    <p>
+        Diseño exclusivo de eventos elegantes y memorables<br>
+        Luxury event design & decoration
+    </p>
 
-    <a class="cta" href="#historia">Descubrir más</a>
+    <a class="btn" href="#historia">Descubrir más</a>
 
 </div>
 
@@ -187,17 +188,17 @@ footer{
         <br>
 
         <p>
-            Contamos con el respaldo de empresas aliadas de confianza, ofreciendo soluciones completas con transparencia, eficiencia y respeto. Nuestros precios son competitivos y trabajamos siempre con comunicación abierta para adaptarnos a cada presupuesto posible.
+            Contamos con el respaldo de empresas aliadas de confianza, ofreciendo soluciones completas con transparencia, eficiencia y respeto. Nuestros precios son competitivos y trabajamos con comunicación abierta para adaptarnos a cada presupuesto posible.
         </p>
 
         <p>
-            We also have the support of trusted partner companies, offering complete solutions with transparency, efficiency and respect. Our prices are competitive and we always maintain open communication to adapt to each possible budget.
+            We also have the support of trusted partner companies, offering complete solutions with transparency, efficiency and respect. Our prices are competitive and we maintain open communication to adapt to each possible budget.
         </p>
 
     </div>
 </section>
 
-<!-- CATEGORÍAS -->
+<!-- CATEGORÍAS (SIMPLIFICADO) -->
 <section id="categorias">
     <h2>Categorías / Categories</h2>
 
@@ -209,7 +210,7 @@ footer{
     </div>
 </section>
 
-<!-- CONTACTO -->
+<!-- CONTACTO (SOLO CONTACTO) -->
 <section id="contacto">
     <h2>Contacto / Contact</h2>
 
