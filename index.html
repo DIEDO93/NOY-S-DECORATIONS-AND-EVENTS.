@@ -16,7 +16,7 @@ body{
     scroll-behavior:smooth;
 }
 
-/* FONDO PREMIUM (lujo pastel + dorado + profundidad) */
+/* FONDO PREMIUM */
 body::before{
     content:"";
     position:fixed;
@@ -51,7 +51,7 @@ nav a{
     font-weight:600;
 }
 
-/* HERO FULL SCREEN */
+/* HERO */
 .hero{
     height:100vh;
     display:flex;
@@ -96,27 +96,6 @@ nav a{
     font-weight:bold;
 }
 
-/* SECCIONES */
-section{
-    max-width:1050px;
-    margin:auto;
-    padding:90px 20px;
-}
-
-h2{
-    font-size:2rem;
-    border-left:4px solid #c8a96a;
-    padding-left:12px;
-    margin-bottom:20px;
-}
-
-.card{
-    background:rgba(255,255,255,0.08);
-    padding:28px;
-    border-radius:15px;
-    backdrop-filter: blur(8px);
-}
-
 /* FOOTER */
 footer{
     text-align:center;
@@ -128,14 +107,15 @@ footer{
 
 <body>
 
-<!-- NAV -->
+<!-- NAV (YA CON PÁGINAS REALES) -->
 <nav>
-    <a href="#historia">Historia</a>
-    <a href="#categorias">Categorías</a>
-    <a href="#contacto">Contacto</a>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="categorias.html">Categorías</a>
+    <a href="contacto.html">Contacto</a>
 </nav>
 
-<!-- HERO (SOLO LO QUE PEDISTE) -->
+<!-- HERO -->
 <div class="hero">
 
     <img src="logo-noy.jpeg" alt="Logo">
@@ -147,83 +127,9 @@ footer{
         Luxury event design & decoration
     </p>
 
-    <a class="btn" href="#historia">Descubrir más</a>
+    <a class="btn" href="historia.html">Descubrir más</a>
 
 </div>
-
-<!-- HISTORIA -->
-<section id="historia">
-    <h2>Historia / Our Story</h2>
-
-    <div class="card">
-
-        <p>
-            Somos un negocio familiar ubicado en Pérez Zeledón, Costa Rica, con más de tres décadas de experiencia en la decoración y organización de eventos desde 1992.
-        </p>
-
-        <p>
-            We are a family-owned business based in Pérez Zeledón, Costa Rica, with over three decades of experience in event decoration and planning since 1992.
-        </p>
-
-        <br>
-
-        <p>
-            Nuestro enfoque es crear experiencias elegantes, personalizadas y memorables para cada cliente, cuidando cada detalle del evento.
-        </p>
-
-        <p>
-            Our focus is to create elegant, personalized and memorable experiences for every client, taking care of every detail of the event.
-        </p>
-
-        <br>
-
-        <p>
-            Atendemos bodas, cumpleaños, corporativos y ocasiones especiales en toda la zona sur de Costa Rica.
-        </p>
-
-        <p>
-            We serve weddings, birthdays, corporate events and special occasions throughout southern Costa Rica.
-        </p>
-
-        <br>
-
-        <p>
-            Contamos con el respaldo de empresas aliadas de confianza, ofreciendo soluciones completas con transparencia, eficiencia y respeto. Nuestros precios son competitivos y trabajamos con comunicación abierta para adaptarnos a cada presupuesto posible.
-        </p>
-
-        <p>
-            We also have the support of trusted partner companies, offering complete solutions with transparency, efficiency and respect. Our prices are competitive and we maintain open communication to adapt to each possible budget.
-        </p>
-
-    </div>
-</section>
-
-<!-- CATEGORÍAS (SIMPLIFICADO) -->
-<section id="categorias">
-    <h2>Categorías / Categories</h2>
-
-    <div class="card">
-        <p><b>Bodas / Weddings</b></p>
-        <p><b>Cumpleaños / Birthdays</b> (incluye quinceaños)</p>
-        <p><b>Corporativos / Corporate Events</b></p>
-        <p><b>Ocasiones especiales / Special Occasions</b></p>
-    </div>
-</section>
-
-<!-- CONTACTO (SOLO CONTACTO) -->
-<section id="contacto">
-    <h2>Contacto / Contact</h2>
-
-    <div class="card">
-        <p><b>WhatsApp:</b> 8618 5305</p>
-        <p><b>Facebook:</b> Floristería y Decoraciones Noy</p>
-        <p><b>Instagram:</b> floristeria_noy</p>
-
-        <a class="btn" href="https://wa.me/50686185305" target="_blank">
-            Enviar Mensaje
-        </a>
-    </div>
-</section>
 
 <footer>
     © 2026 Eventos y Decoraciones Noy
