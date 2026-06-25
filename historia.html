@@ -11,26 +11,24 @@
 body{
     margin:0;
     font-family:'Playfair Display', serif;
-    color:white;
-    background:#1b3f34;
+    color:#fff;
+    background: linear-gradient(135deg, #102e25, #1b3f34);
+    overflow-x:hidden;
 }
 
-/* fondo premium */
+/* ✨ fondo tipo pinterest elegante */
 body::before{
     content:"";
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    inset:0;
     background:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 40%),
-        radial-gradient(circle at 80% 30%, rgba(200,169,106,0.12), transparent 45%),
-        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.05), transparent 50%);
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,0.08), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(200,169,106,0.18), transparent 45%),
+        radial-gradient(circle at 40% 80%, rgba(255,255,255,0.06), transparent 50%);
     z-index:-1;
 }
 
-/* NAV */
+/* NAV elegante flotante */
 nav{
     position:fixed;
     top:0;
@@ -38,36 +36,52 @@ nav{
     display:flex;
     justify-content:center;
     gap:30px;
-    padding:15px;
-    background:rgba(0,0,0,0.25);
-    backdrop-filter: blur(10px);
+    padding:14px;
+    background:rgba(0,0,0,0.35);
+    backdrop-filter: blur(12px);
+    z-index:1000;
 }
 
 nav a{
     color:white;
     text-decoration:none;
     font-weight:600;
+    letter-spacing:1px;
 }
 
-/* CONTENIDO */
+/* contenido */
 .container{
-    max-width:900px;
+    max-width:950px;
     margin:auto;
-    padding:120px 20px 60px;
+    padding:130px 20px 80px;
 }
 
+/* título elegante */
 h1{
-    font-size:2.5rem;
+    font-size:3rem;
+    margin-bottom:10px;
     border-left:4px solid #c8a96a;
-    padding-left:12px;
+    padding-left:15px;
 }
 
+/* tarjetas estilo pinterest */
 .card{
     background:rgba(255,255,255,0.08);
-    padding:25px;
-    border-radius:15px;
-    margin-top:20px;
-    backdrop-filter: blur(8px);
+    border:1px solid rgba(255,255,255,0.12);
+    padding:30px;
+    border-radius:18px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    margin-top:25px;
+    line-height:1.7;
+}
+
+.lang{
+    opacity:0.85;
+    font-size:0.95rem;
+    margin-top:15px;
+    border-top:1px solid rgba(255,255,255,0.15);
+    padding-top:15px;
 }
 </style>
 </head>
@@ -83,17 +97,37 @@ h1{
 
 <div class="container">
 
-<h1>Historia</h1>
+<h1>Nuestra Historia</h1>
 
 <div class="card">
 
 <p>
-Somos un negocio familiar en Costa Rica con más de 30 años de experiencia en decoración de eventos.
+Somos un negocio familiar ubicado en Pérez Zeledón, Costa Rica, con más de tres décadas de experiencia en la creación y decoración de eventos inolvidables. Desde 1992, hemos dedicado nuestra pasión al diseño de experiencias únicas, cuidando cada detalle para transformar momentos especiales en recuerdos eternos.
 </p>
 
 <p>
-Creamos experiencias elegantes, personalizadas y memorables para bodas, cumpleaños y eventos corporativos.
+A lo largo de los años, hemos evolucionado desde pequeños eventos locales hasta producciones completas para bodas, celebraciones corporativas y eventos privados de alto nivel. Nuestro compromiso siempre ha sido el mismo: elegancia, dedicación y personalización absoluta para cada cliente.
 </p>
+
+<p>
+Creemos que cada evento cuenta una historia, y nuestro trabajo es darle vida a esa historia con belleza, armonía y creatividad.
+</p>
+
+<div class="lang">
+
+<p>
+We are a family-owned business located in Pérez Zeledón, Costa Rica, with over three decades of experience in creating and decorating unforgettable events. Since 1992, we have dedicated our passion to designing unique experiences, carefully crafting every detail to turn special moments into lasting memories.
+</p>
+
+<p>
+Over the years, we have evolved from small local events to full-scale productions for weddings, corporate celebrations, and high-end private events. Our commitment has always remained the same: elegance, dedication, and full personalization for every client.
+</p>
+
+<p>
+We believe every event tells a story, and our job is to bring that story to life with beauty, harmony, and creativity.
+</p>
+
+</div>
 
 </div>
 
